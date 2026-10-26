@@ -1,0 +1,24 @@
+1. Extract this ZIP, open devops-lab-app folder in VS Code.
+2. Make sure Docker Desktop is running.
+3. Run: docker build -t devops-flask-app:v1.0 .
+4. Screenshot 1: terminal showing successful build.
+5. Run: docker run -d -p 5000:5000 --name flask-container devops-flask-app:v1.0
+6. Open http://localhost:5000 and capture screenshot 2.
+7. Create a PUBLIC GitHub repository named devops-lab-app with no README.
+8. In the VS Code terminal, run:
+   git init
+   git add .
+   git commit -m "Initial commit: Flask app and CI pipeline"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/devops-lab-app.git
+   git push -u origin main
+9. GitHub repository page: capture screenshot 3 with app.py, Dockerfile and .github.
+10. GitHub Actions tab: open "DevOps CI Build Pipeline", capture green success screenshot 4.
+11. Open build-and-test job logs, capture screenshot 5 showing checkout/build/test.
+12. Fill in official student report: name, SAP ID, section, date, five real screenshots, three question answers, signature.
+13. Export as PDF and upload to Moellim.
+
+Important: replace YOUR_USERNAME with your real GitHub username. If git asks for user identity, run:
+   git config --global user.name "Your Name"
+   git config --global user.email "you@example.com"
+Then rerun the failed git commit command.
